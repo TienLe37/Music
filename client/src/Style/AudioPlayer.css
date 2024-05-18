@@ -1,0 +1,20 @@
+.Audio-button::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #87CBB9;
+    z-index: -1;
+    content: '';
+    border-radius: 25px;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.Audio-button:hover::before, #Play-button:focus:before {
+    transform: scaleX(1);
+    border-radius: 25px;
+}
+
+
